@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (55 trophies)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide &amp; tracker</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="lede">Every one of the 55 trophies — official name, description and grade, a guide in our own words with its sources, a roadmap to the platinum, and a checklist that remembers your progress.</p>
+    </div>
+    <div class="progress-card" id="progressCard">
+      <div class="progress-big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="progress-sub" id="progressSub">Platinum: Vice Got a Price! — 0 of 54 others done</p>
+      <p class="progress-grades" id="progressGrades"></p>
+    </div>
+  </div>
+  <p class="honesty">Reported, not yet confirmed by Rockstar: Rockstar had not published an official trophy list at launch. Names, descriptions and grades are as Exophase and PSNProfiles listed them on 2026-11-18 (the two agreeing). Five triggers are still unconfirmed — their guides say so plainly instead of inventing one.</p>
+</header>
+
+<nav class="views" aria-label="Sections">
+  <button type="button" data-view="checklist" class="view-btn active">Checklist</button>
+  <button type="button" data-view="roadmap" class="view-btn">Roadmap to Platinum</button>
+  <button type="button" data-view="notes" class="view-btn">100% &amp; Notes</button>
+  <button type="button" data-view="sources" class="view-btn">Sources</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy name, mission, place…" autocomplete="off"></label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <div class="kind-filters" role="group" aria-label="Filter by kind">
+        <button type="button" data-kind="all" class="kind-btn active">All</button>
+        <button type="button" data-kind="story" class="kind-btn">Story</button>
+        <button type="button" data-kind="missable" class="kind-btn">Missable</button>
+        <button type="button" data-kind="collectibles" class="kind-btn">Collectibles</button>
+        <button type="button" data-kind="activities" class="kind-btn">Activities</button>
+        <button type="button" data-kind="hidden" class="kind-btn">Hidden</button>
+        <button type="button" data-kind="online" class="kind-btn">Online</button>
+      </div>
+      <label class="spoiler-toggle"><input id="spoilerToggle" type="checkbox"> Spoiler-free: hide story trophies until earned</label>
+      <div class="io">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json"></label>
+      </div>
+    </div>
+    <p class="list-meta" id="listMeta"></p>
+    <p class="online-note" id="onlineNote" hidden>There are no online trophies in GTA VI — all 55 are single-player. Nothing to filter here.</p>
+    <ol class="trophy-list" id="trophyList"></ol>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the Platinum</h2>
+    <p class="section-lede">Vice Got a Price! — about 200 hours, difficulty 4/10 (PowerPyx). Three stages, in order. Work them in sequence: the story first, the 100% checklist second, the stragglers last.</p>
+    <div class="missable-box" role="alert">
+      <h3>⚠ The one possibly missable trophy</h3>
+      <p><strong>Positive Mental Attitude</strong> — meditate at all 18 spots. Guides report the Chapter 1 balcony meditation may be required, and it is unconfirmed whether it can be done later. Do it the first time it is offered in Chapter 1, and keep a manual save from early Chapter 1 as insurance. Every other trophy can be earned after the story.</p>
+    </div>
+    <ol class="roadmap" id="roadmapList"></ol>
+    <h3>Order of play, at a glance</h3>
+    <table class="order-table">
+      <thead><tr><th>When</th><th>Do</th><th>Trophies it earns</th></tr></thead>
+      <tbody>
+        <tr><td>Chapter 1</td><td>Story; balcony meditation; scan vehicles; keep a Ch. 1 save</td><td>Just Like Paradise, Paradise Lost, Positive Mental Attitude (safeguarded)</td></tr>
+        <tr><td>Chapters 2–3</td><td>Story; Scooter Bros opens (Ch. 2); Snap Gun from Yasmani (Ch. 3)</td><td>Trust, Break the Bank, T**s Ass Drug Money, Vice City, Baby!</td></tr>
+        <tr><td>Chapter 4</td><td>Story; take the optional vault-unlock mission</td><td>Family Matters, DWNFALL, Hi-Jacked, Top Of The World, Ma</td></tr>
+        <tr><td>Chapter 5</td><td>Story to the finale</td><td>Snow Storm, You Gotta Know When to Get Off</td></tr>
+        <tr><td>Post-story</td><td>100% checklist (Progress &gt; Stats &gt; 100% Completion)</td><td>A Long Road, Cunning Stunts, The Shootist, Top Fun, Maximum Withdrawal, Pest Control, Whip It Good, You WAiNKer!, Don&rsquo;t Touch My Deck</td></tr>
+        <tr><td>Cleanup</td><td>Stranger strands &amp; character finales; one-off trophies</td><td>Strangers &amp; Freaks, the six character finales, Fair Game, Catch Me If You Can, Challenging Tank, Let&rsquo;s Go Bowling, Personal Best, Actions Speak Louder, the unconfirmed five</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="view-notes" class="view" hidden>
+    <h2>100% Completion &amp; Notes</h2>
+    <h3>The 100% checklist (reported by PowerPyx)</h3>
+    <p>After the story ends, the checklist appears at <strong>Progress &gt; Stats &gt; 100% Completion</strong>. Earlier progress already counts. PowerPyx reports the checklist covers roughly 60% of true completion.</p>
+    <ul class="checklist-100" id="checklist100"></ul>
+    <h3>Good to know</h3>
+    <ul class="notes-list" id="notesList"></ul>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <h2>Sources</h2>
+    <p class="section-lede">Every guide above names its sources beside the trophy. The official names, descriptions and grades come from Exophase and PSNProfiles (18 Nov 2026, agreeing). The guides themselves are written in our own words — sources are cited, never copied.</p>
+    <ul class="sources-list" id="sourcesList"></ul>
+    <p class="section-lede">Gamerscore values are reported by guide sites, not official — and sites disagree on one: &ldquo;You Gotta Know When to Get Off&rdquo; is reported as 50G by Output Lag and GTA Zone, and 100G by ofzenandcomputing. This guide does not print G values as fact.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide uses no Rockstar logo, artwork or game screenshots. Works fully offline; progress is stored only in your browser (localStorage).</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
